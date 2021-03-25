@@ -228,7 +228,7 @@ Now, you can re-run step 1) and it should work fine
 5. As before, requirements.txt need to be run before, i.e. pip install -r requirements.txt (if running from Python2) or pip3 install -r requirements.txt (if running from Python3).
 6. We have added a sanity script (sanity.py). This can be run before running pyreval as: python2 sanity.py. This will basically check if everything is setup correctly on your system so that PyrEval can then be run easily. Namely this checks if Stanford NLP has been extracted to the Stanford directory, all dependencies have been installed correctly, etc. Note: if you get an error regarding punkt from sanity.py, please refer the Notes section in this README.
 7. results.csv which wasn't generated earlier is now fixed and it is generated under the PyrEval/Scoring directory.
-8. Please report any bugs which appear in Python3 as it is in development phase.
+8. Please report any bugs which appear in Python3 as it is still in development phase.
 
 ## Acknowledgement
 The contributors to this repository include: Andrew Warner (for initial implementation of the pipeline), Brent Hoffert (for creation of the launcher), Purushartha Singh (for fixing bugs in decomposition parser), and Steven Fontanella (for cleaning up the package and testing the improvements).  
