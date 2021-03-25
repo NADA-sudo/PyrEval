@@ -220,6 +220,16 @@ If nltk throws errors like: "Resource punkt not found" in the 1) (Pre-processing
 5. In the prompt, then enter punkt and it should properly install punkt for you.
 Now, you can re-run step 1) and it should work fine
 
+## Migration to Python3
+1. We have tried to make the code run smoothly for Python3 users. To run in Python2 or Python3 simply type: python2/python3 pyreval.py on the terminal.
+2. Then follow the on-screen instructions (typically you may want to run 1, 2, 3, 4, 5 (in order)).
+3. Some additional user-friendly things which have been added to the code are: Green colored prints after each step (preprocessing, pyramid building, etc.) are added. In case there is an error, a red colored print appears with the error log. 'c' command which was for clearing everything now really cleans every folder created except the model and peer directory folders (i.e. the data). An additional, 'q' command has been added to nicely quit out of pyreval.
+4. A user-editable, "parameters.ini" file has been added which is basically the file to set all paths for the code. The paths are self explainable. Some typical examples are "BaseDir" which means the path to this code-repository in your file system (computer) e.g. "/home/leo/PyrEval"
+5. As before, requirements.txt need to be run before, i.e. pip install -r requirements.txt (if running from Python2) or pip3 install -r requirements.txt (if running from Python3).
+6. We have added a sanity script (sanity.py). This can be run before running pyreval as: python2 sanity.py. This will basically check if everything is setup correctly on your system so that PyrEval can then be run easily. Namely this checks if Stanford NLP has been extracted to the Stanford directory, all dependencies have been installed correctly, etc. Note: if you get an error regarding punkt from sanity.py, please refer the Notes section in this README.
+7. results.csv which wasn't generated earlier is now fixed and it is generated under the PyrEval/Scoring directory.
+8. Please report any bugs which appear in Python3 as it is in development phase.
+
 ## Acknowledgement
 The contributors to this repository include: Andrew Warner (for initial implementation of the pipeline), Brent Hoffert (for creation of the launcher), Purushartha Singh (for fixing bugs in decomposition parser), and Steven Fontanella (for cleaning up the package and testing the improvements).  
 
